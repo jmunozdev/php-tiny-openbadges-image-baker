@@ -1,4 +1,4 @@
-# php-tiny-badge-image-baker
+# php-tiny-openbadges-image-baker
 
 ## Requisites: 
 - ImageMagick for PHP has to be installed in the server.
