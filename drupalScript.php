@@ -1,10 +1,12 @@
 <?php
 /**
  * Creates a link to download the baked .png file.
+ * @param string $assertion_json_url The assertion file URL.
+ * @param string $output_file_name The name of the PNG file will be downloaded.
+ * @return string A link in case of success or an error description message in case of failure.
  */
 function module_print_baked_assertion_image($assertion_json_url, $output_file_name) {
   try {
-  	// Retrieving the assertion json and the imagefile.
     $assertion_url = url($assertion_json_url, array('absolute' => TRUE));
     $assertion_file = file_get_contents($assertion_url);
     $assertion_array = json_decode($assertion_file, true);
