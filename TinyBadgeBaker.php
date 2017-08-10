@@ -42,7 +42,7 @@ class TinyBadgeBaker {
      * and a string containing the blob of the png file in case of success.
      * @return bool|string
      */
-    protected function createImageBlob(){
+    public function createImageBlob(){
         try {
             // Retrieve the assertion JSON.
             $assertion_file = file_get_contents($this->assertionJsonUrl);
